@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use TomVerran\Stats\Storage\Database\MysqlConfiguration;
 use TomVerran\Stats\Storage\DatabaseStorage;
-
+header('Access-Control-Allow-Origin: *');
 
 $app = new \Silex\Application;
 $configuration = new MysqlConfiguration;
