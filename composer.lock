@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "195761e27cdcd1962462e07556496739",
+    "hash": "a1d91ad2cfe12f1011df24a501c2f94c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1001,7 +1001,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:stats-app/metric-storage.git",
-                "reference": "b325e487753dc209c6d5383f9cf46be4bb8f6eeb"
+                "reference": "1ba7aca240cc889a9efdc73a675e927f971ac5eb"
             },
             "require": {
                 "doctrine/dbal": "2.5.*",
@@ -1031,7 +1031,7 @@
             ],
             "description": "A library to store and query metrics",
             "homepage": "https://carefulcoder.co.uk",
-            "time": "2015-03-19 18:59:00"
+            "time": "2015-03-19 19:42:30"
         }
     ],
     "packages-dev": [

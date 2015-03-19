@@ -58,7 +58,7 @@ class ApplicationTest extends PHPUnit_Framework_TestCase
         $request = $this->getRequest( '/metrics/series', ['series' => ['cats', 'dogs']] );
         $response = $this->app->handle( $request );
 
-        $expectedResponse = [['name' => 'cats', 'values' => [0]], ['name' => 'dogs', 'values' => [0]]];
+        $expectedResponse = [['name' => 'cats', 'values' => [1 => 0]], ['name' => 'dogs', 'values' => [1 => 0]]];
         $this->assertEquals( json_encode( $expectedResponse ), $response->getContent() );
     }
 
@@ -70,7 +70,7 @@ class ApplicationTest extends PHPUnit_Framework_TestCase
         $request = $this->getRequest( '/metrics/series', ['series' => ['cats', 'dogs'], 'from' => $ninety, 'to' => $ninety ] );
         $response = $this->app->handle( $request );
 
-        $expectedResponse = [['name' => 'cats', 'values' => [0]], ['name' => 'dogs', 'values' => []]];
+        $expectedResponse = [['name' => 'cats', 'values' => [$ninety => 0]], ['name' => 'dogs', 'values' => []]];
         $this->assertEquals( json_encode( $expectedResponse ), $response->getContent() );
     }
 
