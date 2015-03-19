@@ -24,6 +24,12 @@
         "tomverran/metric-storage": "dev-master"
     },
 
+    "autoload": {
+      "psr-4": {
+        "TomVerran\\MetricRestApi\\": ["src/", "tests/"]
+      }
+    },
+
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
     },
